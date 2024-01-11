@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, nav, section, footer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply a box-sizing rule */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Base body styles */
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #121e2c;
+    background-color: #ebf1f2;
+}
+
+/* Header and navigation styles */
+header {
+    background-color: #5e9a9b;
+    color: #ebf1f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.logo-container {
+    position: absolute;
+    left: 1em;
+}
+
+.logo {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.nav-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-spacer {
+    width: 100px; /* This should be equal to the width of your logo */
+    visibility: hidden; /* Keeps the spacer invisible */
+}
+
+nav ul {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: #ebf1f2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section styles */
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #121e2c;
+    color: #ebf1f2;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        position: static;
+        margin-bottom: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav li {
+        margin: 0.5em 0;
+    }
+}
